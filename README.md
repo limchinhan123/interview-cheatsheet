@@ -1,235 +1,124 @@
-# Interview Cheatsheet
+<div align="center">
+  <h1>Executive Interview Question Bank 🎙️</h1>
 
-An interactive interview-prep question bank for senior role preparation. It turns deep company research, role requirements, case-study prompts, and personal career stories into a structured practice tool with categories, expandable answers, coaching tips, progress tracking, and a product/business cheat sheet.
+  **An interactive, highly structured interview-prep tool designed for senior leadership roles.**
 
-This repository uses **Grab as the demo company and role example**. The content is tailored to a Senior Regional Director, Product Marketing interview at Grab, but the app structure is reusable for any company, function, or seniority level.
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel)](https://vercel.com/)
+</div>
 
-Live demo:
+---
 
-- Question bank: https://interview-bank-chi.vercel.app
-- Product cheat sheet: https://interview-bank-chi.vercel.app/?view=products
+## 📖 Overview
 
-## What This Includes
+The **Executive Interview Question Bank** is a purpose-built web application that transforms scattered interview research, company facts, and personal career stories into a structured, interactive practice environment. 
 
-- 72 interview questions organized by interview flow and topic
-- Expandable model answers and coaching tips
-- Practice progress tracking with reset
-- Section filtering by category
-- Search within the question list
-- A separate product cheat-sheet view
-- Mobile-optimized layout
-- Static deployment through Vercel
+Preparing for a senior role (Director, VP, or C-level) requires more than just rehearsing generic behavioural questions. It demands deep company research, strategic points of view (POVs), and the ability to navigate complex cross-functional case studies. This tool acts as a "second brain" for high-stakes interview preparation, allowing candidates to practice under pressure with categorized questions, expandable model answers, and coaching tips.
 
-## Demo Content
+*Note: This repository uses **Grab** and a **Senior Regional Director, Product Marketing** role as the demonstration dataset. However, the application architecture is completely agnostic and can be easily adapted for any company, function, or seniority level.*
 
-The current demo is built around Grab and includes:
+## 📸 Screenshots
 
-- Opening and fit questions
-- Product marketing leadership questions
-- Regional campaign scaling questions
-- Cross-functional influence questions
-- Long-term strategy and revenue-growth questions
-- Commerce and financial-services expansion questions
-- Grab product and business cheat sheet
-- Case studies on GrabUnlimited, Mai, Vietnam competition, Taiwan expansion, GrabMart/local commerce, and financial services
-- Curveball and technical interview prompts
+<div align="center">
+  <img src="docs/screenshot-hero.png" alt="Interview Question Bank — Main dashboard showing the dark editorial UI, progress tracker, and categorized question list" width="100%" />
+  <p><em>The main question bank interface — featuring a polished dark theme, progress tracking (top right), category filtering, and difficulty indicators for each prompt.</em></p>
+</div>
 
-Again: **Grab is used here as a demonstration dataset.** To reuse this for another role, replace the company, role, questions, answers, and product facts.
+<br/>
 
-## How To Reuse This For Another Role
+<div align="center">
+  <img src="docs/screenshot-products.png" alt="Product Cheat Sheet — A dedicated view for company facts, product lines, and strategic POVs" width="100%" />
+  <p><em>The Product Cheat Sheet view — a dedicated space to memorize company facts, business models, and interview-ready POVs before tackling case-study questions.</em></p>
+</div>
 
-### 1. Define the target role
+---
 
-Start with a clear role brief:
+## ✨ Key Features
 
-- Company
-- Role title
-- Hiring manager or interview loop
-- Business unit
-- Level or scope
-- Known interview format
-- Required competencies
-- Likely case-study areas
+- **Interactive Question Bank:** 72 highly tailored interview questions organized by interview flow (Opening, Edge, Strategy, Case Study, Culture, etc.).
+- **Expandable Model Answers:** Click any question to reveal the core "hook", a fully written model answer, and specific delivery coaching tips.
+- **Progress Tracking:** A visual counter tracks how many questions you have practiced, with a reset function for multiple rehearsal rounds.
+- **Category & Search Filtering:** Instantly filter the board by interview loop stage (e.g., "Stakeholder Loop" or "Technical Probes") or search for specific keywords.
+- **Product Cheat Sheet View:** A toggleable secondary view designed for rapid memorization of company facts, product maps, and strategic tensions.
+- **Zero-Dependency Architecture:** Built with pure HTML, CSS, and Vanilla JavaScript. No heavy frameworks, no build steps required for local development—just open the file.
+- **Mobile-Optimized:** Fully responsive design, perfect for practicing on your phone while commuting.
 
-Example:
+## 🛠️ Tech Stack
 
-```text
-Company: Grab
-Role: Senior Regional Director, Product Marketing
-Interview loop: Hiring manager, stakeholder loop, case study
-Competencies: PMM leadership, regional scale, product strategy, AI, marketplace economics
-```
+This project deliberately avoids modern JavaScript frameworks in favour of absolute simplicity and longevity. 
 
-### 2. Gather research
+- **Structure:** Semantic HTML5
+- **Styling:** CSS3 with CSS Custom Properties (Variables) for the dark editorial theme, utilizing `Inter` and `DM Mono` fonts.
+- **Logic:** Vanilla ES6 JavaScript (`app.js`) handling state management, DOM rendering, and search filtering.
+- **Deployment:** Vercel (Static output).
 
-Collect source material from:
+## 🚀 How To Reuse This For Your Own Interview
 
-- Job description
-- Company annual reports and earnings releases
-- Investor presentations
-- Product pages
-- Press releases
-- Leadership interviews
-- Competitor research
-- Your own resume and career stories
-- Prior interview notes
+This tool is designed to be forked and customized. Follow these steps to adapt it for your target role:
 
-Recommended workflow: use deep research mode across multiple research agents/models, then reconcile the outputs into one source of truth. I recommend running parallel research with **Gemini, Manus, GPT, and Claude** because each tends to surface different angles, sources, and blind spots. Use the combined research to populate:
+### 1. Define the Target Role
+Start by defining the company, role title, hiring manager, and required competencies. This will guide your research.
 
-- Company facts and business model
-- Product map and strategic priorities
-- Competitor landscape
-- Interviewer and stakeholder context
-- Likely case studies
-- Culture and leadership signals
-- Your strongest matching career stories
+### 2. Gather Deep Research
+Use AI research agents (like Manus, Claude, or ChatGPT) to synthesize job descriptions, annual reports, investor presentations, and competitor landscapes. Extract the core strategic tensions the company is facing.
 
-For a high-stakes role, validate recent facts before adding them. Revenue, product names, leadership, acquisitions, and strategic priorities can change quickly.
-
-### 3. Create the question categories
-
-Edit the `categories` array in `app.js`.
-
-Recommended category pattern:
-
-```js
+### 3. Update the Categories
+Open `app.js` and modify the `categories` array to match your expected interview loops.
+```javascript
 const categories = [
   "All",
   "Opening & Fit",
-  "Your Edge",
   "Product & Market Insight",
   "Leadership & XFN",
-  "Company POV",
-  "Strategy",
-  "Culture & Risks",
   "Case Study",
-  "Curveballs & Technical",
-  "Facts / Appendix",
+  "Curveballs & Technical"
 ];
 ```
 
-Keep the categories close to the actual interview flow. The goal is not just storage; it should help someone rehearse naturally.
+### 4. Replace the Questions
+Populate the `questions` array in `app.js`. Each object requires:
+- `question`: What the interviewer will ask.
+- `hook`: The one-line angle to remember.
+- `answer`: Your full, structured model answer.
+- `tips`: Coaching notes for delivery (e.g., "Don't sound defensive here").
 
-### 4. Replace the questions
+### 5. Update the Product Cheat Sheet
+Modify the `productCheatSheet`, `businessFacts`, and `strategicDeepDives` arrays in `app.js` with your target company's data.
 
-Each question in `app.js` follows this structure:
+## 💻 Local Development & Deployment
 
-```js
-{
-  id: 1,
-  category: "Opening & Fit",
-  difficulty: "High",
-  question: "Tell me about yourself and why this role.",
-  hook: "Lead with scope, not chronology.",
-  answer: `**Model answer headline.**
+Because this is a static app, running it locally is trivial:
 
-Full answer goes here.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/limchinhan123/interview-cheatsheet.git
+   cd interview-cheatsheet
+   ```
 
-Use bold lines for structure and concise paragraphs for speaking practice.`,
-  tips: "Coaching note for delivery, emphasis, or likely follow-up."
-}
-```
+2. **Run a local server:**
+   Using Python:
+   ```bash
+   python3 -m http.server 4177
+   ```
+   Or using Node:
+   ```bash
+   npx serve
+   ```
 
-Use this structure for every new card:
+3. **Open in browser:**
+   Navigate to `http://localhost:4177`
 
-- `question`: what the interviewer asks
-- `hook`: the one-line angle to remember
-- `answer`: the model answer
-- `tips`: coaching note for delivery
+### Deploying to Vercel
 
-### 5. Reorder the interview flow
-
-The app uses `interviewFlow` in `app.js` to make the default order feel like a real interview.
-
-Recommended flow:
-
-1. Opening / fit
-2. Career edge
-3. Product or market insight
-4. Leadership / cross-functional influence
-5. Company strategy POV
-6. Culture / risks
-7. Case studies
-8. Technical or curveball probes
-9. Facts appendix
-
-Update `interviewFlow` whenever you add or remove questions.
-
-### 6. Update the product cheat sheet
-
-The product cheat sheet is driven by:
-
-- `productCheatSheet`
-- `businessFacts`
-- `strategicDeepDives`
-
-For another company, replace these with:
-
-- Product lines
-- Business model
-- Growth engines
-- Key metrics
-- Competitors
-- Strategic tensions
-- Interview-ready POVs
-
-Make sure to label demo facts clearly if you publish the project. Do not imply a company endorses the content.
-
-### 7. Run locally
-
-This is a static app. No framework is required.
+This repository includes a `vercel.json` and a `package.json` build script that simply copies the static files into a `dist` folder.
 
 ```bash
-npm run build
-python3 -m http.server 4177
+npm install -g vercel
+vercel deploy --prod
 ```
 
-Then open:
+## ⚠️ Disclaimer
 
-```text
-http://127.0.0.1:4177/
-```
-
-If you are deploying with Vercel, the build command copies static files into `dist`.
-
-## Deploy
-
-This repo is configured for Vercel:
-
-```json
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
-}
-```
-
-Deploy with:
-
-```bash
-npx vercel deploy --prod --yes
-```
-
-## File Structure
-
-```text
-.
-├── index.html       # Static page shell
-├── styles.css       # App styling and responsive layout
-├── app.js           # Questions, product cheat sheet, rendering, state
-├── package.json     # Build script
-├── vercel.json      # Vercel static output config
-└── README.md        # Project and reuse guide
-```
-
-## Notes For Reuse
-
-- Keep company facts sourced and current.
-- Avoid adding too many generic questions; tailor to the actual role.
-- Write answers in a voice the candidate can actually say out loud.
-- Use case studies for business-critical topics, not trivia.
-- Separate factual cheat sheets from answer cards.
-- Make the first 10 questions feel like a real interview opening.
-
-## Disclaimer
-
-This is an independent interview-preparation tool. Grab is used as a demo company and is not affiliated with, sponsoring, or endorsing this project.
+This is an independent interview-preparation tool. The demonstration content uses **Grab** as an example company. Grab is not affiliated with, sponsoring, or endorsing this project. All demonstration data is synthesized from public sources and should be verified independently.
