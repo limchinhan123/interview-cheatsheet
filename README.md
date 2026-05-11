@@ -1,4 +1,4 @@
-# Interview Question Bank
+# Interview Cheatsheet
 
 An interactive interview-prep question bank for senior role preparation. It turns deep company research, role requirements, case-study prompts, and personal career stories into a structured practice tool with categories, expandable answers, coaching tips, progress tracking, and a product/business cheat sheet.
 
@@ -73,6 +73,16 @@ Collect source material from:
 - Competitor research
 - Your own resume and career stories
 - Prior interview notes
+
+Recommended workflow: use deep research mode across multiple research agents/models, then reconcile the outputs into one source of truth. I recommend running parallel research with **Gemini, Manus, GPT, and Claude** because each tends to surface different angles, sources, and blind spots. Use the combined research to populate:
+
+- Company facts and business model
+- Product map and strategic priorities
+- Competitor landscape
+- Interviewer and stakeholder context
+- Likely case studies
+- Culture and leadership signals
+- Your strongest matching career stories
 
 For a high-stakes role, validate recent facts before adding them. Revenue, product names, leadership, acquisitions, and strategic priorities can change quickly.
 

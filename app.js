@@ -2390,7 +2390,7 @@ function render() {
         <div class="header-row">
           <div class="header-title-block">
             <div class="eyebrow">GRAB - SR. REGIONAL DIRECTOR, PRODUCT MARKETING</div>
-            <div class="title">Interview Question Bank</div>
+            <div class="title">Interview Cheatsheet</div>
             <div class="subtitle">Hiring manager: Sulin Lau · Loop + Case Study</div>
           </div>
           <div class="counter">
